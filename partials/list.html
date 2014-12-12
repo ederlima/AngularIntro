@@ -1,0 +1,35 @@
+<div class="row">
+	<div class="col-lg-12">
+    	<a href="#/new" title="Adicionar" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Adicionar</a>
+    </div>
+</div>
+<div class="row">
+	<div class="col-lg-12">
+    	<filter-form></filter-form>
+    </div>
+</div>
+<div class="row">
+	<div class="col-lg-12">
+        <table class="table table-striped">
+            <thead>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Especialidade</th>
+                <th>Editar</th>
+                <th>Excluir</th>
+            </thead>
+            <tfoot>
+                <th colspan="5">Equipe Web &amp; Geo 2014</th>
+            </tfoot>
+            <tbody>
+                <tr ng-repeat="people in team | filter:peopleName">
+                    <td>{{people.name}}</td>
+                    <td>{{people.age}}</td>
+                    <td>{{people.specialization}}</td>
+                    <td><a href="#/edit/{{$index}}"><span class="glyphicon glyphicon-edit"></span> Editar</a></td>
+                    <td><a href="#/remove/{{$index}}"><span class="glyphicon glyphicon-remove"></span> Excluir</a></td>
+                </tr>
+            </tbody>
+        </table>
+	</div>
+</div>

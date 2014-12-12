@@ -1,0 +1,7 @@
+﻿[
+        {"name": "Eder Lima", "age": 32, "specialization": "Front-End"},
+        {"name": "Wellinton Paes", "age": 33, "specialization": "Back-End"},
+        {"name": "Marcelo Miranda", "age": 35, "specialization": "UX Design"},
+        {"name": "Maikel Saito", "age": 34, "specialization": "Geo Analisys"},
+        {"name": "Rafael Katayama", "age": 26, "specialization": "Geo Services"}
+]
